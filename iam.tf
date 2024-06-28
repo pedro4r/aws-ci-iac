@@ -35,7 +35,7 @@ resource "aws_iam_role" "tf-role" {
     Version : "2012-10-17"
   })
 
-inline_policy {
+  inline_policy {
     name = "tf-permissions"
     policy = jsonencode({
       Statement = [{
